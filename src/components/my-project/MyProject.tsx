@@ -12,7 +12,12 @@ export default function MyProject() {
             <button onClick={() => {}}>see demo</button>
           </div>
           <div className="w-2/3">
-            <img src={project.img ? project.img : "public/vite.svg"} alt="" />
+            <img
+              className="w-2/3 h-96 mx-auto object-cover"
+              src={project.img ? project.img : "src/assets/test.jpg"}
+              alt=""
+              // style={{width: "100%", height: "100px", objectFit:"fill"}}
+            />
           </div>
         </div>
       ))}
