@@ -1,0 +1,22 @@
+#file-animation {
+  animation: file-animation 0.25s forwards;
+}
+
+.text-animation {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+@keyframes file-animation {
+  0% {
+    margin-top: -100%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
