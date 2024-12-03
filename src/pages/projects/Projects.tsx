@@ -7,17 +7,17 @@ const projects = [
     title: "ClearNews",
     description:
       "An accessible news platform designed for visually impaired users, featuring text-to-speech integration and customizable theme related settings.",
-    image: "./public/assets/clearnews.png",
+    image: "./assets/clearnews.png",
     languages: ["React", "Redux", "Tailwind", "Material-ui", "Firebase"],
     source:
       "https://github.com/NTKdz/clone-web-project---uet-phat-trien-ung-dung-web",
     demo: "https://tuong-tac-nguoi-may.vercel.app",
   },
   {
-    title: "Package Manager",
+    title: "Package Manager", 
     description:
       "A user-friendly website to manage, track, and analyze package deliveries with detailed statistical insights. Built with React and Node.js.",
-    image: "./public/assets/package-manager.png",
+    image: "./assets/package-manager.png",
     languages: [
       "React",
       "Typescript",
@@ -35,7 +35,7 @@ const projects = [
     title: "SprintSync",
     description:
       "A productivity-focused mobile app for project and task management, offering real-time collaboration and progress tracking. Developed using Flutter.",
-    image: "./public/assets/sprintsync.png",
+    image: "./assets/sprintsync.png",
     languages: ["Kotlin", "Firebase", "Jetpack compose"],
     source: "https://github.com/NTKdz/clone-mobile-project---uet-mobdev20",
     demo: "https://example.com/",

@@ -73,13 +73,13 @@ export default function Contact() {
 
       <div className="mt-12 flex items-center gap-8 ">
         <img
-          src="src/assets/github_icon.svg"
+          src="./assets/github_icon.svg"
           alt="Github"
           className="w-8 h-8 hover:cursor-pointer animate-bounce-1"
           onClick={() => window.open("https://github.com/NTKdz", "_blank")}
         />
         <img
-          src="src/assets/facebook_icon.svg"
+          src="./assets/facebook_icon.svg"
           alt="Facebook"
           className="w-8 h-8 hover:cursor-pointer animate-bounce-2"
           onClick={() =>
@@ -87,7 +87,7 @@ export default function Contact() {
           }
         />
         <img
-          src="src/assets/linkedin_icon.svg"
+          src="./assets/linkedin_icon.svg"
           alt="Linkedin"
           className="w-8 h-8 hover:cursor-pointer animate-bounce-3"
           onClick={() =>
@@ -98,7 +98,7 @@ export default function Contact() {
           }
         />
         <img
-          src="src/assets/gmail_icon.svg"
+          src="./assets/gmail_icon.svg"
           alt="Gmail"
           className="w-8 h-8 hover:cursor-pointer animate-bounce-4"
           onClick={() =>

@@ -14,7 +14,7 @@ function App() {
       <div className="h-screen w-screen flex flex-col overflow-auto">
         <div className="border-b border-b-[rgba(255,255,255,0.1)] flex p-1 items-center">
           <div className="h-[24px] px-2">
-            <img src="./public/assets/icon.png" className="h-full w-full"></img>
+            <img alt="my portfolio icon of KhoiDev" src="./assets/icon.png" className="h-full w-full"></img>
           </div>
           {["File", "Edit", "View", "Go", "Run", "Terminal", "Help"].map(
             (item, index) => (
