@@ -9,12 +9,30 @@ const projects = [
       "An accessible news platform designed for visually impaired users, featuring text-to-speech integration and customizable theme related settings.",
     image: "./assets/clearnews.png",
     languages: ["React", "Redux", "Tailwind", "Material-ui", "Firebase"],
-    source:
-      "https://github.com/NTKdz/clone-web-project---uet-phat-trien-ung-dung-web",
+    source: "https://github.com/NTKdz/tuong-tac-nguoi-may",
     demo: "https://tuong-tac-nguoi-may.vercel.app",
   },
   {
-    title: "Package Manager", 
+    title: "Registry Total",
+    description:
+      "A web application for managing Car Registration and Registration center",
+    image: "./assets/registry-total.png",
+    languages: ["React", "Typescript", "Material-ui", "Redux", "Nestjs"],
+    source:
+      "https://github.com/NTKdz/clone-web-project---uet-phat-trien-ung-dung-web",
+    demo: "https://example.com/",
+  },
+  {
+    title: "SprintSync",
+    description:
+      "A productivity-focused mobile app for project and task management, offering real-time collaboration and progress tracking. Developed using Flutter.",
+    image: "./assets/sprintsync.png",
+    languages: ["Kotlin", "Firebase", "Jetpack compose"],
+    source: "https://github.com/NTKdz/clone-mobile-project---uet-mobdev20",
+    demo: "https://example.com/",
+  },
+  {
+    title: "Package Manager",
     description:
       "A user-friendly website to manage, track, and analyze package deliveries with detailed statistical insights. Built with React and Node.js.",
     image: "./assets/package-manager.png",
@@ -28,16 +46,6 @@ const projects = [
       "Postgresql",
     ],
     source: "https://github.com/NTKdz/package-manager",
-    demo: "https://example.com/",
-  },
-
-  {
-    title: "SprintSync",
-    description:
-      "A productivity-focused mobile app for project and task management, offering real-time collaboration and progress tracking. Developed using Flutter.",
-    image: "./assets/sprintsync.png",
-    languages: ["Kotlin", "Firebase", "Jetpack compose"],
-    source: "https://github.com/NTKdz/clone-mobile-project---uet-mobdev20",
     demo: "https://example.com/",
   },
 ];
@@ -91,7 +99,7 @@ export default function Projects() {
                 <div className="group absolute top-0 left-0 w-full h-full bg-black hover:bg-opacity-0 transition-opacity bg-opacity-80 z-1 flex justify-center">
                   <div className="p-4 group-hover:opacity-0 transition-opacity duration-300">
                     {/* <div className="w-full h-1/3"></div> */}
-                    <h2 className="text-xl font-bold text-white">
+                    <h2 className="text-2xl font-bold text-white mb-1">
                       {item.title}
                     </h2>
                     <p className="text-gray-300 text-sm mb-2">
