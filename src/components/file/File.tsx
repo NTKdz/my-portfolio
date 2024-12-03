@@ -43,6 +43,18 @@ export default function File({
     setSelectedTab(pathToTab[location.pathname.slice(1)] || "none");
   }, [location.pathname]);
 
+  function getIcon(file: string) {
+    const fileName = file.toLocaleLowerCase().split(".")[0];
+    if (fileName.includes("home"))
+      return <img src="src\assets\react_icon.svg" alt="" className="w-4 h-4" />;
+    if (fileName.includes("projects"))
+      return <img src="src\assets\ts-icon.svg" alt="" className="w-5 h-5" />;
+    if (fileName.includes("about"))
+      return <img src="src\assets\html_icon.svg" alt="" className="w-5 h-5" />;
+    if (fileName.includes("contact"))
+      return <img src="src\assets\css_icon.svg" alt="" className="w-4 h-4" />;
+  }
+
   return (
     <div
       className={`${
@@ -57,9 +69,9 @@ export default function File({
           title === "my-portfolio" ? "font-bold" : ""
         } gap-1 py-1 ${
           title.toLowerCase().includes(selectedTab)
-            ? "text-[#00dbde] bg-zinc-900"
+            ? "text-white bg-zinc-900"
             : ""
-        } hover:bg-[#00dbde] hover:text-zinc-900 transition-all`}
+        } hover:bg-blue-500 hover:text-white transition-all group`}
         onClick={() => {
           if (type === "folder") {
             console.log("click folder", title);
@@ -84,7 +96,9 @@ export default function File({
         ) : (
           <div className="w-[20px]"></div>
         )}
-        <div className="text-animation">{title}</div>
+        <div className="text-animation flex items-center gap-1">
+          {getIcon(title)} {title}
+        </div>
       </div>
 
       {isOpen && type === "folder" && (

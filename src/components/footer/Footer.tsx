@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="flex h-6 items-center justify-between bg-zinc-900 px-2 text-xs text-white border-t border-t-[rgba(255,255,255,0.1)]">
+    <footer className="w-full flex h-6 items-center justify-between bg-zinc-900 px-2 text-xs text-white border-t border-t-[rgba(255,255,255,0.1)]">
       <div className="flex items-center gap-3">
         <div className="flex items-center gap-1">
           <svg className="h-4 w-4" viewBox="0 0 16 16" fill="currentColor">
