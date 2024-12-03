@@ -44,13 +44,13 @@ export default function FileSelector() {
   function getIcon(file: string) {
     const fileName = file.toLocaleLowerCase().split(".")[0];
     if (fileName.includes("home"))
-      return <img src="src\assets\react_icon.svg" alt="" className="w-4 h-4" />;
+      return <img src="./public/assets/react_icon.svg" alt="" className="w-4 h-4" />;
     if (fileName.includes("projects"))
-      return <img src="src\assets\ts-icon.svg" alt="" className="w-5 h-5" />;
+      return <img src="./public/assets/ts-icon.svg" alt="" className="w-5 h-5" />;
     if (fileName.includes("about"))
-      return <img src="src\assets\html_icon.svg" alt="" className="w-5 h-5" />;
+      return <img src="./public/assets/html_icon.svg" alt="" className="w-5 h-5" />;
     if (fileName.includes("contact"))
-      return <img src="src\assets\css_icon.svg" alt="" className="w-4 h-4" />;
+      return <img src="./public/assets/css_icon.svg" alt="" className="w-4 h-4" />;
   }
   return (
     <div className="w-full h-[36px]  text-center sm:flex hidden min-w-0">
