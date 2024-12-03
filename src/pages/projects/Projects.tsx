@@ -4,6 +4,16 @@ import "./styles.css";
 
 const projects = [
   {
+    title: "ClearNews",
+    description:
+      "An accessible news platform designed for visually impaired users, featuring text-to-speech integration and customizable theme related settings.",
+    image: "src/assets/clearnews.png",
+    languages: ["React", "Redux", "Tailwind", "Material-ui", "Firebase"],
+    source:
+      "https://github.com/NTKdz/clone-web-project---uet-phat-trien-ung-dung-web",
+    demo: "https://tuong-tac-nguoi-may.vercel.app",
+  },
+  {
     title: "Package Manager",
     description:
       "A user-friendly website to manage, track, and analyze package deliveries with detailed statistical insights. Built with React and Node.js.",
@@ -20,16 +30,7 @@ const projects = [
     source: "https://github.com/NTKdz/package-manager",
     demo: "https://example.com/",
   },
-  {
-    title: "ClearNews",
-    description:
-      "An accessible news platform designed for visually impaired users, featuring text-to-speech integration and customizable theme related settings.",
-    image: "src/assets/clearnews.png",
-    languages: ["React", "Redux", "Tailwind", "Material-ui", "Firebase"],
-    source:
-      "https://github.com/NTKdz/clone-web-project---uet-phat-trien-ung-dung-web",
-    demo: "https://example.com/",
-  },
+
   {
     title: "SprintSync",
     description:
@@ -47,7 +48,7 @@ export default function Projects() {
 
   useEffect(() => {
     const resizeObserver = new ResizeObserver(() => {
-      console.log(columns)
+      console.log(columns);
       if (containerRef.current) {
         const width = containerRef.current.offsetWidth;
         console.log(width);
@@ -57,7 +58,7 @@ export default function Projects() {
           setColumns("grid-cols-2");
         } else {
           setColumns("grid-cols-3");
-          console.log("d")
+          console.log("d");
         }
       }
     });
@@ -72,7 +73,7 @@ export default function Projects() {
         resizeObserver.unobserve(containerRef.current);
       }
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
