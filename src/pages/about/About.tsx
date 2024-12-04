@@ -1,4 +1,3 @@
-
 export default function About() {
   return (
     <div className="flex mt-1 ml-1">
@@ -23,8 +22,8 @@ export default function About() {
         <div className="mt-6">
           <div className="text-base font-bold text-blue-500">Education</div>
           <div>
-            VNU University of Engineering and Technology – VNU-UET 2021 - Now
-            Computer science GPA: 3.13
+            VNU University of Engineering and Technology (VNU-UET) / 2021 - Now
+            <div>Computer science GPA: 3.13</div>
           </div>
         </div>
         <div className="mt-6">
