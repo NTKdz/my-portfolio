@@ -23,7 +23,7 @@ export default function About() {
           <div className="text-base font-bold text-blue-500">Education</div>
           <div>
             VNU University of Engineering and Technology (VNU-UET) / 2021 - Now
-            <div>Computer science GPA: 3.13</div>
+            <div>Computer science GPA: 3.15</div>
           </div>
         </div>
         <div className="mt-6">
